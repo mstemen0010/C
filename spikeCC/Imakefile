@@ -1,0 +1,11 @@
+CC = g++ 
+
+SYS_LIBRARIES = -lm 
+XCOMM = #
+EXTRA_INCLUDES = -I g++ -I /system/dest/sgi_51/libg++/011/lib/g++-include 
+LOCAL_LIBRARIES = $(XLIB)
+DEPLIBS = $(DEPXLIB)
+SRCS = table.cc daemon.cc spike.cc spikeapp.cc 
+OBJS = table.o daemon.o spike.o spikeapp.o 
+
+ComplexProgramTarget(spike)

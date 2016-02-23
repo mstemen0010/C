@@ -1,0 +1,19 @@
+
+/*
+** File: %M% SCCS %I% - %G%
+**
+** Author:   Matthew Stemen
+**
+**
+** 
+** Created:  19 June 1995
+**  
+**
+**
+** Purpose: Monitors and reports any and all remote logins to the 
+**          host it is run from.  This activity is reported either 
+**          using Sound, Images(icons), and Tabular reports or any
+**          combination thereof.
+*/
+
+

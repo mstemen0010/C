@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int makeHash(char *key);
+
+
+main()
+{
+	FILE	*infp;
+	double 	inputd[50];
+	long 	inputl[50];
+	char	inputs[BUFSIZ];
+	char	inputs2[BUFSIZ];
+	double	inputl2;
+	int		index = 0, numread = 0;
+
+	if ((infp = fopen("junk", "r")) != NULL)
+	{
+		while (fgets(inputs, BUFSIZ, infp))
+		{
+			printf(":%s - %u: \n", inputs, makeHash(inputs) );
+			fflush(stdout);
+		}
+		close(infp);
+
+		printf("Enter a string: ");
+		fgets(inputs2, BUFSIZ, stdin);
+		printf("%s : %u\n", inputs2, makeHash(inputs2));
+
+
+
+	}
+}
+
+int makeHash(char *key)
+{
+	
+	double dKey;
+	int		iKey;
+
+	dKey = (double)*key;
+	iKey = dKey % 10.0;
+
+	return iKey;
+}

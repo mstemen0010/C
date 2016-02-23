@@ -1,0 +1,1 @@
+g++ -I /system/dest/sgi_51/libg++/011/lib/g++-include spike.cc daemon.cc table.cc spikeapp.cc -o spike
